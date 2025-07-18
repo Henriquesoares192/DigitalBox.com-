@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigitalBox - Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>DigitalBox</h1>
+    <div id="auth">
+      <input type="email" placeholder="Email" id="email" /><br />
+      <input type="password" placeholder="Senha" id="senha" /><br />
+      <select id="tipoConta">
+        <option value="comprador">Comprador</option>
+        <option value="vendedor">Vendedor</option>
+      </select><br />
+      <button onclick="cadastrar()">Cadastrar</button>
+      <button onclick="login()">Entrar</button>
+      <p><a href="#" onclick="esqueciSenha()">Esqueci minha senha</a></p>
+    </div>
+    <div id="painel" style="display:none;">
+      <h2>Painel</h2>
+      <p id="perfilInfo"></p>
+      <input type="text" placeholder="Nome do Produto" id="produto" />
+      <input type="number" placeholder="Preço" id="preco" />
+      <button onclick="adicionarProduto()">Adicionar Produto</button>
+      <div id="produtos"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
