@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
+input, select, button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+#produtos {
+  margin-top: 20px;
+}
